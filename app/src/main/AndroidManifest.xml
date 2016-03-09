@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="za.co.mhlambanyathigroup.firemanager2">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <permission
+        android:name="com.androidhive.pushnotifications.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.androidhive.pushnotifications.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:configChanges="orientation|screenSize">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".MainMenu"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Management"
+            android:label="@string/title_activity_management"
+            android:parentActivityName=".MainMenu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.mhlambanyathigroup.firemanager2.MainMenu" />
+
+            <intent-filter>
+                <action android:name="za.co.mhlambanyathigroup.firemanager2.Management" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Weather"
+            android:label="@string/title_activity_weather"
+            android:parentActivityName=".MainMenu"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.mhlambanyathigroup.firemanager2.MainMenu" />
+
+            <intent-filter>
+                <action android:name="za.co.mhlambanyathigroup.firemanager2.Weather" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EVS"
+            android:label="@string/title_activity_evs"
+            android:parentActivityName=".MainMenu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.mhlambanyathigroup.firemanager2.MainMenu" />
+
+            <intent-filter>
+                <action android:name="za.co.mhlambanyathigroup.firemanager2.EVS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Chat"
+            android:label="@string/title_activity_chat"
+            android:parentActivityName=".MainMenu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.mhlambanyathigroup.firemanager2.MainMenu" />
+
+            <intent-filter>
+                <action android:name="za.co.mhlambanyathigroup.firemanager2.Chat" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Report"
+            android:label="@string/title_activity_report"
+            android:parentActivityName=".MainMenu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.mhlambanyathigroup.firemanager2.MainMenu" />
+
+            <intent-filter>
+                <action android:name="za.co.mhlambanyathigroup.firemanager2.Report" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Feeds"
+            android:label="@string/title_activity_feeds"
+            android:parentActivityName=".MainMenu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.mhlambanyathigroup.firemanager2.MainMenu" />
+
+            <intent-filter>
+                <action android:name="za.co.mhlambanyathigroup.firemanager2.Feeds" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserManagement"
+            android:label="@string/title_activity_user_management"
+            android:parentActivityName=".Management"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.mhlambanyathigroup.firemanager2.Management" />
+
+            <intent-filter>
+                <action android:name="za.co.mhlambanyathigroup.firemanager2.UserManagement" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LiveSpotterFeed"
+            android:label="@string/title_activity_live_spotter_feed"
+            android:parentActivityName=".Management"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.mhlambanyathigroup.firemanager2.Management" />
+
+            <intent-filter>
+                <action android:name="za.co.mhlambanyathigroup.firemanager2.LiveSpotterFeed" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SpotterOneFeed"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_spotter_one_feed"
+            android:parentActivityName=".LiveSpotterFeed"
+            android:theme="@style/FullscreenTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.mhlambanyathigroup.firemanager2.LiveSpotterFeed" />
+
+            <intent-filter>
+                <action android:name="za.co.mhlambanyathigroup.firemanager2.SpotterOneFeed" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SpotterTwoFeed"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_spotter_two_feed"
+            android:parentActivityName=".LiveSpotterFeed"
+            android:theme="@style/FullscreenTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.mhlambanyathigroup.firemanager2.LiveSpotterFeed" />
+
+            <intent-filter>
+                <action android:name="za.co.mhlambanyathigroup.firemanager2.SpotterTwoFeed" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PostFeed"
+            android:label="@string/title_activity_post_feed"
+            android:parentActivityName=".Management"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.mhlambanyathigroup.firemanager2.Management" />
+
+            <intent-filter>
+                <action android:name="za.co.mhlambanyathigroup.firemanager2.PostFeed" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ReportFireLocation"
+            android:label="@string/title_activity_report_fire_location"
+            android:parentActivityName=".Report"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.mhlambanyathigroup.firemanager2.Report" />
+
+            <intent-filter>
+                <action android:name="za.co.mhlambanyathigroup.firemanager2.ReportFireLocation" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ReportFirePhoto"
+            android:label="@string/title_activity_report_fire_photo"
+            android:orientation="vertical"
+            android:parentActivityName=".Report"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.mhlambanyathigroup.firemanager2.Report" />
+
+            <intent-filter>
+                <action android:name="za.co.mhlambanyathigroup.firemanager2.ReportFirePhoto" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".GetCurrentLocation"
+            android:label="@string/title_activity_get_current_location"
+            android:parentActivityName=".Report"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.mhlambanyathigroup.firemanager2.Report" />
+
+            <intent-filter>
+                <action android:name="za.co.mhlambanyathigroup.firemanager2.GetCurrentLocation" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FDIMeasurements"
+            android:label="@string/title_activity_fdimeasurements"
+            android:parentActivityName=".MainMenu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.mhlambanyathigroup.firemanager2.MainMenu" />
+
+            <intent-filter>
+                <action android:name="za.co.mhlambanyathigroup.firemanager2.FDIMeasurements" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RequestPermit"
+            android:label="@string/title_activity_request_permit"
+            android:parentActivityName=".MainMenu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.mhlambanyathigroup.firemanager2.MainMenu" />
+
+            <intent-filter>
+                <action android:name="za.co.mhlambanyathigroup.firemanager2.RequestPermit" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCBFxgtB3slJ_TWarWpWIhbvSUaS19pZ8U" />
+
+        <activity
+            android:name=".navigation"
+            android:label="@string/title_activity_navigation"
+            android:parentActivityName=".MainMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.mhlambanyathigroup.firemanager2.MainMenu" />
+
+            <intent-filter>
+                <action android:name="za.co.mhlambanyathigroup.firemanager2.navigation" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activefires"
+            android:label="@string/title_activity_activefires"
+            android:parentActivityName=".MainMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.mhlambanyathigroup.firemanager2.MainMenu" />
+
+            <intent-filter>
+                <action android:name="za.co.mhlambanyathigroup.firemanager2.activefires" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FDICalculator"
+            android:label="@string/title_activity_fdicalculator"
+            android:parentActivityName=".FDIMeasurements"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.mhlambanyathigroup.firemanager2.FDIMeasurements" />
+
+            <intent-filter>
+                <action android:name="za.co.mhlambanyathigroup.firemanager2.FDICalculator" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Safe"
+            android:label="@string/title_activity_safe"
+            android:parentActivityName=".FDICalculator"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.mhlambanyathigroup.firemanager2.FDICalculator" />
+
+            <intent-filter>
+                <action android:name="za.co.mhlambanyathigroup.firemanager2.Safe" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Low"
+            android:label="@string/title_activity_low"
+            android:parentActivityName=".FDICalculator"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.mhlambanyathigroup.firemanager2.FDICalculator" />
+
+            <intent-filter>
+                <action android:name="za.co.mhlambanyathigroup.firemanager2.Low" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".High"
+            android:label="@string/title_activity_high"
+            android:parentActivityName=".FDICalculator"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.mhlambanyathigroup.firemanager2.FDICalculator" />
+
+            <intent-filter>
+                <action android:name="za.co.mhlambanyathigroup.firemanager2.High" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Moderate"
+            android:label="@string/title_activity_moderate"
+            android:parentActivityName=".FDICalculator"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.mhlambanyathigroup.firemanager2.FDICalculator" />
+
+            <intent-filter>
+                <action android:name="za.co.mhlambanyathigroup.firemanager2.Moderate" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ExtremelyHigh"
+            android:label="@string/title_activity_extremely_high"
+            android:parentActivityName=".FDICalculator"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.mhlambanyathigroup.firemanager2.FDICalculator" />
+
+            <intent-filter>
+                <action android:name="za.co.mhlambanyathigroup.firemanager2.ExtremelyHigh" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".firechat"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_firechat"
+            android:parentActivityName=".Chat"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.mhlambanyathigroup.firemanager2.Chat" />
+
+            <intent-filter>
+                <action android:name="za.co.mhlambanyathigroup.firemanager2.firechat" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FDIWeather"
+            android:label="@string/title_activity_fdiweather"
+            android:parentActivityName=".Weather"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="za.co.mhlambanyathigroup.firemanager2.Weather" />
+            <intent-filter>
+                <action android:name="za.co.mhlambanyathigroup.firemanager2.FDIWeather" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

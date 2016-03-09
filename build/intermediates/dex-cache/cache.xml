@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Wessels\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3\5fc52c41ef0239d1093a1eb7c3697036183677ce\gson-2.3.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5fc52c41ef0239d1093a1eb7c3697036183677ce">
+        <dex dex="C:\Users\Wessels\AndroidStudioProjects\FireManager2\app\build\intermediates\pre-dexed\debug\gson-2.3_22ed30974e465da1fdb01a290a3abd3c4e1c9ea2.jar" />
+    </item>
+    <item
+        jar="C:\Users\Wessels\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp\2.5.0\4de2b4ed3445c37ec1720a7d214712e845a24636\okhttp-2.5.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="4de2b4ed3445c37ec1720a7d214712e845a24636">
+        <dex dex="C:\Users\Wessels\AndroidStudioProjects\FireManager2\app\build\intermediates\pre-dexed\debug\okhttp-2.5.0_ba7feb66d6e9d51db7b699fd418434ca4d951784.jar" />
+    </item>
+    <item
+        jar="C:\Users\Wessels\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="C:\Users\Wessels\AndroidStudioProjects\FireManager2\app\build\intermediates\pre-dexed\debug\okio-1.6.0_b18de6745f62f44615e6b7fc8e73b7ff529cdf37.jar" />
+    </item>
+    <item
+        jar="C:\Users\Wessels\.gradle\caches\modules-2\files-2.1\com.microsoft.azure\azure-mobile-android\3.0\f89345b5695f55c1fa37768bef3c0207c847af\azure-mobile-android-3.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="00f89345b5695f55c1fa37768bef3c0207c847af">
+        <dex dex="C:\Users\Wessels\AndroidStudioProjects\FireManager2\app\build\intermediates\pre-dexed\debug\azure-mobile-android-3.0_0b266d644ed5cc1b38a34ad1a2545b3048ea29ed.jar" />
+    </item>
+    <item
+        jar="C:\Users\Wessels\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\18.0\cce0823396aa693798f8882e64213b1772032b09\guava-18.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="cce0823396aa693798f8882e64213b1772032b09">
+        <dex dex="C:\Users\Wessels\AndroidStudioProjects\FireManager2\app\build\intermediates\pre-dexed\debug\guava-18.0_bb172b2607ccd5bf20cd9782c71c2edaf845d835.jar" />
+    </item>
+    <item
+        jar="C:\Users\Wessels\.gradle\caches\modules-2\files-2.1\com.microsoft.azure\azure-notifications-handler\1.0.1\c322af100020e6db539f2aa367698d4b88fc453f\azure-notifications-handler-1.0.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="c322af100020e6db539f2aa367698d4b88fc453f">
+        <dex dex="C:\Users\Wessels\AndroidStudioProjects\FireManager2\app\build\intermediates\pre-dexed\debug\azure-notifications-handler-1.0.1_c9ed73d67d61d3b8fb1c38f0ec26b7008f32c909.jar" />
+    </item>
+
+</items>

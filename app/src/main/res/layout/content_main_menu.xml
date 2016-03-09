@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="za.co.mhlambanyathigroup.firemanager2.MainMenu"
+    tools:showIn="@layout/activity_main_menu">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:id="@+id/textView32">
+
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/relativeLayout"
+        android:id="@+id/frameLayout">
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Services"
+            android:id="@+id/textView7"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Umpiluzi Fire Protection Association"
+            android:id="@+id/textView9"
+            android:layout_below="@+id/textView7"
+            android:layout_centerHorizontal="true"
+            android:textSize="12dp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Mpumalanga"
+            android:id="@+id/textView10"
+            android:layout_below="@+id/textView9"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="EVS"
+            android:id="@+id/textView12"
+            android:layout_below="@+id/textView10"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Weather"
+            android:id="@+id/textView13"
+            android:layout_alignBaseline="@+id/textView12"
+            android:layout_alignBottom="@+id/textView12"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Navigation"
+            android:id="@+id/textView14"
+            android:layout_above="@+id/EVSButton"
+            android:layout_alignLeft="@+id/NavigatorButton"
+            android:layout_alignStart="@+id/NavigatorButton" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/WeatherButton"
+            android:src="@drawable/weathermain"
+            android:minWidth="80dp"
+            android:minHeight="80dp"
+            android:maxWidth="80dp"
+            android:maxHeight="100dp"
+            android:layout_below="@+id/textView13"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/EVSButton"
+            android:src="@drawable/evsmain"
+            android:minWidth="80dp"
+            android:minHeight="80dp"
+            android:maxWidth="80dp"
+            android:maxHeight="100dp"
+            android:layout_alignTop="@+id/WeatherButton"
+            android:layout_alignLeft="@+id/ReportButton"
+            android:layout_alignStart="@+id/ReportButton" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/NavigatorButton"
+            android:src="@drawable/navmain"
+            android:minWidth="80dp"
+            android:minHeight="80dp"
+            android:maxWidth="80dp"
+            android:maxHeight="100dp"
+            android:layout_below="@+id/textView14"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Chat"
+            android:id="@+id/textView8"
+            android:layout_alignBaseline="@+id/textView11"
+            android:layout_alignBottom="@+id/textView11"
+            android:layout_alignLeft="@+id/textView13"
+            android:layout_alignStart="@+id/textView13" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Report"
+            android:id="@+id/textView11"
+            android:layout_below="@+id/EVSButton"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="RSS Feeds"
+            android:id="@+id/textView43"
+            android:layout_above="@+id/FeedsButton"
+            android:layout_alignLeft="@+id/FeedsButton"
+            android:layout_alignStart="@+id/FeedsButton" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ChatButton"
+            android:src="@drawable/chatmain"
+            android:minWidth="80dp"
+            android:minHeight="80dp"
+            android:maxWidth="80dp"
+            android:maxHeight="100dp"
+            android:layout_below="@+id/textView11"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ReportButton"
+            android:src="@drawable/firesmain"
+            android:minWidth="80dp"
+            android:minHeight="80dp"
+            android:maxWidth="80dp"
+            android:maxHeight="100dp"
+            android:layout_below="@+id/textView11"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/FeedsButton"
+            android:src="@drawable/rssmain"
+            android:minWidth="80dp"
+            android:minHeight="80dp"
+            android:maxWidth="80dp"
+            android:maxHeight="80dp"
+            android:layout_below="@+id/textView11"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="FDI"
+            android:id="@+id/textView5"
+            android:layout_below="@+id/ChatButton"
+            android:layout_alignLeft="@+id/textView8"
+            android:layout_alignStart="@+id/textView8" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/FDIMeasurementsButton"
+            android:minWidth="80dp"
+            android:minHeight="80dp"
+            android:maxWidth="80dp"
+            android:maxHeight="100dp"
+            android:src="@drawable/fdi"
+            android:layout_below="@+id/textView5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ActiveFiresButton"
+            android:minWidth="80dp"
+            android:minHeight="80dp"
+            android:maxWidth="80dp"
+            android:maxHeight="100dp"
+            android:src="@drawable/activefires"
+            android:layout_above="@+id/Management"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Active Fires"
+            android:id="@+id/textView15"
+            android:layout_alignBaseline="@+id/textView6"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/RequestPermitButton"
+            android:minWidth="80dp"
+            android:minHeight="80dp"
+            android:maxWidth="80dp"
+            android:maxHeight="80dp"
+            android:src="@drawable/permit"
+            android:layout_below="@+id/textView6"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignStart="@+id/textView6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Permits"
+            android:id="@+id/textView6"
+            android:layout_below="@+id/FeedsButton"
+            android:layout_alignLeft="@+id/FeedsButton"
+            android:layout_alignStart="@+id/FeedsButton" />
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Management"
+            android:id="@+id/Management"
+            android:layout_below="@+id/FDIMeasurementsButton"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>
+
+
